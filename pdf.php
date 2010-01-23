@@ -7,6 +7,11 @@ include_once 'utils.php';
 class PdfFileReader {
   
   function PdfFileReader($stream) {
+    # make sure stream is not empty.
+    if (trim(fread($stream, 4096)) == '') {
+      die("Error reading PDF: PDF is empty.");
+    }
+    fseek($stream, 0);
     $this->stream = $stream;
     $this->resolved_objects = array();
     $this->read($stream);
