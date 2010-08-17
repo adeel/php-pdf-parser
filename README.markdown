@@ -1,4 +1,4 @@
-This is a mostly complete port of pyPdf <http://pybrary.net/pyPdf/>. The API is basically the same.
+This is a mostly complete port of pyPdf &lt;http://pybrary.net/pyPdf/&gt;. The API is basically the same.
 
     <?php
     
