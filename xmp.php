@@ -14,7 +14,7 @@ $PDFX_NAMESPACE = "http://ns.adobe.com/pdfx/1.3/";
 
 $iso8601 = "/(?P<year>[0-9]{4})(-(?P<month>[0-9]{2})(-(?P<day>[0-9]+)(T(?P<hour>[0-9]{2}):(?P<minute>[0-9]{2})(:(?P<second>[0-9]{2}(.[0-9]+)?))?(?P<tzd>Z|[-+][0-9]{2}:[0-9]{2}))?)?)?";
 
-class XmpInformation extends PdfObject {
+class XmpInformation extends Object {
   
   function XmpInformation($stream) {
     $this->stream = $stream;
